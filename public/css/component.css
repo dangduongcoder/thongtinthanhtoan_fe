@@ -1,0 +1,133 @@
+
+body { 
+    font-family: Nunito;
+}
+
+.shadow {
+    box-shadow: 11px 10px 71px -18px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 11px 10px 71px -18px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 10px 71px -18px rgba(0,0,0,0.75);
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-left {
+    justify-content: left;
+}
+
+.align-bottom {
+    align-items: flex-end;
+}
+
+.align-right {
+    justify-content: right;
+}
+
+.button-primary {
+    background: var(--primary);
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50px;
+    width: auto;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+a {
+    color: var(--primary);
+}
+
+h2 {
+    font-size: 36px;
+    color: var(--dark);
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+
+/* FOOTER */
+
+footer {
+    /* position: absolute;
+    bottom: 0px; */
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+}
+
+#loveu {
+    font-size: 18px;
+    color: var(--primary);
+}
+
+
+#loveu ion-icon{
+    transition: all 250ms;
+}
+
+#loveu ion-icon:hover{
+    transform: rotate(360deg);
+    transform: scale(2);
+}
+
+/* HEADER */
+
+
+header { 
+    height: 100px;
+    width: 100%;
+}
+
+header .container {
+    height: 100%;
+}
+
+.header-wrap {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+}
+
+.logo img {
+    max-height: 50%;
+}
+
+.nav ul {
+    display: flex;
+    font-size: 20px;
+}
+
+.nav a {
+    color: var(--primary);
+    margin-right: 30px;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nav li {
+        display: none;
+    }
+    .img-thumbs-hidden {
+        display: none;
+    }
+
+    .row {
+        gap: 50px;
+    }
+}
